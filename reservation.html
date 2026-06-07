@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23214d3b'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='50' fill='%23ffffff' font-family='sans-serif' font-weight='bold'>CT</text></svg>" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -31,21 +32,67 @@
         <div>
           <p class="eyebrow">Request a table</p>
           <h2>Simple booking path for mobile and desktop guests.</h2>
-          <p>For Phase 2 this is a polished front-end form. In Phase 3 we can add the demo confirmation and light interactions.</p>
+          <p>Fill in your details below and we'll confirm your reservation within the hour. For groups larger than 8, please call us directly.</p>
         </div>
-        <form class="reservation-form">
-          <label>Name<input type="text" placeholder="Your name" /></label>
-          <label>Phone<input type="tel" placeholder="+94 77 123 4567" /></label>
-          <label>Email<input type="email" placeholder="you@example.com" /></label>
-          <label>Date<input type="date" /></label>
+        <form class="reservation-form" data-booking-form>
+          <label>Name<input type="text" placeholder="Your name" required /></label>
+          <label>Phone<input type="tel" placeholder="+94 77 123 4567" required /></label>
+          <label>Email<input type="email" placeholder="you@example.com" required /></label>
+          <label>Date<input type="date" required /></label>
           <label>Time<select><option>12:00 PM</option><option>1:30 PM</option><option>7:00 PM</option><option>8:30 PM</option></select></label>
           <label>Guests<select><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8+ guests</option></select></label>
           <label class="wide-field">Special notes<input type="text" placeholder="Birthday, high chair, window table" /></label>
-          <button class="button button-primary" type="button">Request Booking</button>
+          <button class="button button-primary" type="submit">Request Booking</button>
         </form>
       </section>
     </main>
-    <footer class="site-footer"><span>Ceylon Table</span><p>Premium Sri Lankan restaurant website demo.</p></footer>
+
+    <div class="toast" data-toast aria-live="polite">
+      <div class="toast-icon">✓</div>
+      <div class="toast-body">
+        <strong>Booking request received!</strong>
+        <p>We'll confirm your reservation shortly via phone or email.</p>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Ceylon Table home">
+            <span class="brand-mark">CT</span>
+            <span>
+              <strong>Ceylon Table</strong>
+              <small>Colombo Kitchen</small>
+            </span>
+          </a>
+          <p>Every plate starts with tradition and ends with care.</p>
+        </div>
+        <div class="footer-links">
+          <strong>Explore</strong>
+          <nav>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reservation.html">Reservation</a>
+          </nav>
+        </div>
+        <div class="footer-contact">
+          <strong>Visit Us</strong>
+          <p>No. 48, Galle Road<br />Colombo 03</p>
+          <p>+94 11 234 5678<br />hello@ceylontable.lk</p>
+        </div>
+        <div class="footer-hours">
+          <strong>Hours</strong>
+          <p>Monday - Sunday<br />11:00 AM - 10:30 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ceylon Table. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script><script src="script.js"></script>
   </body>
 </html>

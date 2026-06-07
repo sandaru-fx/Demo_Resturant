@@ -27,6 +27,62 @@ window.addEventListener("scroll", () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 24);
 });
 
+/* Reservation form — toast confirmation */
+const bookingForm = document.querySelector("[data-booking-form]");
+const toast = document.querySelector("[data-toast]");
+
+if (bookingForm && toast) {
+  let toastTimer = null;
+
+  bookingForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    /* Show success toast */
+    toast.classList.add("is-visible");
+
+    /* Reset form fields */
+    bookingForm.reset();
+
+    /* Auto-dismiss after 5 seconds */
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove("is-visible");
+    }, 5000);
+  });
+
+  /* Dismiss toast on click */
+  toast.addEventListener("click", () => {
+    clearTimeout(toastTimer);
+    toast.classList.remove("is-visible");
+  });
+}
+
+/* Scroll Reveal Animations */
+const revealElements = document.querySelectorAll(
+  ".section-heading, .feature-card, .split-copy, .split-image, .story-panel, .values-grid article, .gallery-grid img, .menu-category"
+);
+
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    root: null,
+    rootMargin: "0px 0px -60px 0px",
+    threshold: 0.1,
+  }
+);
+
+revealElements.forEach((el) => {
+  el.classList.add("reveal");
+  revealObserver.observe(el);
+});
+
 const canvas = document.querySelector("#spiceCanvas");
 
 if (canvas && window.THREE) {
