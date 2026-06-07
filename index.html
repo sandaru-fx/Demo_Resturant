@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ceylon Table | Sri Lankan Restaurant Demo</title>
-    <meta
-      name="description"
-      content="A premium-friendly Sri Lankan restaurant website demo with menu, gallery, reservations, and contact sections."
-    />
+    <title>Ceylon Table | Sri Lankan Restaurant</title>
+    <meta name="description" content="A premium-friendly Sri Lankan restaurant website demo for client presentations." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,31 +19,29 @@
     </div>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="Ceylon Table home">
+      <a class="brand" href="index.html" aria-label="Ceylon Table home">
         <span class="brand-mark">CT</span>
         <span>
           <strong>Ceylon Table</strong>
           <small>Colombo Kitchen</small>
         </span>
       </a>
-
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
         <span></span>
         <span></span>
       </button>
-
       <nav class="main-nav" data-nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reservation">Reservation</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero section" id="home">
+      <section class="hero section">
         <div class="hero-media">
           <img
             src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1800&q=85"
@@ -62,8 +57,8 @@
             and family dinners in the heart of Colombo.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#reservation">Reserve a Table</a>
-            <a class="button button-light" href="#menu">View Menu</a>
+            <a class="button button-primary" href="reservation.html">Reserve a Table</a>
+            <a class="button button-light" href="menu.html">View Menu</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Opening details">
@@ -88,60 +83,45 @@
         </div>
       </section>
 
-      <section class="section content-section" id="menu">
+      <section class="section content-section">
         <div class="section-heading">
-          <p class="eyebrow">Menu preview</p>
-          <h2>Signature Lankan plates</h2>
-          <p>Clear categories and clean pricing make the restaurant feel easy to trust before guests arrive.</p>
+          <div>
+            <p class="eyebrow">Signature taste</p>
+            <h2>A familiar Lankan table with a premium finish.</h2>
+          </div>
+          <p>
+            This homepage gives clients the immediate first impression: real food,
+            clear actions, and a brand that feels warm enough for families and
+            polished enough for business dinners.
+          </p>
         </div>
-        <div class="menu-grid">
-          <article class="menu-card">
-            <img
-              src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=85"
-              alt="Rice and curry served with sides"
-            />
-            <div>
-              <span>Lunch favorite</span>
-              <h3>Chicken Rice & Curry</h3>
-              <p>Steamed rice, chicken curry, dhal, mallung, papadam, and sambol.</p>
-              <strong>LKR 1,450</strong>
-            </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=85" alt="Rice and curry served with sides" />
+            <h3>Rice & Curry Lunch</h3>
+            <p>Daily curries, mallung, dhal, papadam, and sambol served in a clean, modern style.</p>
           </article>
-          <article class="menu-card">
-            <img
-              src="https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=900&q=85"
-              alt="Seafood curry in a bowl"
-            />
-            <div>
-              <span>Chef's choice</span>
-              <h3>Ceylon Crab Curry</h3>
-              <p>Lagoon crab simmered with roasted spices, coconut milk, and curry leaves.</p>
-              <strong>LKR 3,900</strong>
-            </div>
+          <article class="feature-card">
+            <img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=900&q=85" alt="Seafood curry in a bowl" />
+            <h3>Coastal Seafood</h3>
+            <p>Crab, prawns, and fish curries built around roasted spices and coconut milk.</p>
           </article>
-          <article class="menu-card">
-            <img
-              src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=900&q=85"
-              alt="Kottu roti with vegetables"
-            />
-            <div>
-              <span>Street classic</span>
-              <h3>Cheese Chicken Kottu</h3>
-              <p>Chopped godhamba roti, chicken, vegetables, egg, and melted cheese.</p>
-              <strong>LKR 1,750</strong>
-            </div>
+          <article class="feature-card">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=900&q=85" alt="Kottu roti with vegetables" />
+            <h3>Evening Kottu</h3>
+            <p>Street-food comfort with a restaurant-level plate, perfect for casual groups.</p>
           </article>
         </div>
       </section>
 
-      <section class="section split-section" id="about">
+      <section class="section split-section">
         <div class="split-copy">
-          <p class="eyebrow">Our story</p>
-          <h2>Built around familiar Sri Lankan flavor, served with modern care.</h2>
+          <p class="eyebrow">Why guests return</p>
+          <h2>Food that feels local, service that feels considered.</h2>
           <p>
-            This demo positions a restaurant as warm, reliable, and memorable. The
-            design gives owners a premium online presence without making the brand
-            feel distant from everyday diners.
+            Ceylon Table is framed as a flexible demo brand. The same structure can
+            be customized for a family restaurant, hotel dining room, cafe, or
+            seafood spot without rebuilding the whole experience.
           </p>
           <div class="stats">
             <div><strong>38</strong><span>Menu items</span></div>
@@ -150,88 +130,23 @@
           </div>
         </div>
         <div class="split-image">
-          <img
-            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85"
-            alt="Warm restaurant interior"
-          />
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=85" alt="Warm restaurant interior" />
         </div>
       </section>
 
-      <section class="section content-section" id="gallery">
-        <div class="section-heading">
-          <p class="eyebrow">Gallery</p>
-          <h2>Food, space, and atmosphere</h2>
-          <p>A visual grid helps clients immediately understand how photos can sell the restaurant before a guest reads anything.</p>
-        </div>
-        <div class="gallery-grid">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85" alt="Colorful plated meal" />
-          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85" alt="Restaurant table setting" />
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85" alt="Fresh baked dish" />
-          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85" alt="Fresh salad and vegetables" />
-        </div>
-      </section>
-
-      <section class="section reservation-section" id="reservation">
-        <div>
-          <p class="eyebrow">Reservations</p>
-          <h2>Make the next table easy to book.</h2>
-          <p>
-            Phase 1 includes the full form layout. In later phases this can show a
-            demo confirmation or connect to WhatsApp, email, or a booking system.
-          </p>
-        </div>
-        <form class="reservation-form">
-          <label>
-            Name
-            <input type="text" placeholder="Your name" />
-          </label>
-          <label>
-            Phone
-            <input type="tel" placeholder="+94 77 123 4567" />
-          </label>
-          <label>
-            Date
-            <input type="date" />
-          </label>
-          <label>
-            Guests
-            <select>
-              <option>2 guests</option>
-              <option>4 guests</option>
-              <option>6 guests</option>
-              <option>8+ guests</option>
-            </select>
-          </label>
-          <button class="button button-primary" type="button">Request Booking</button>
-        </form>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Visit us in Colombo</h2>
-          <p>No. 48, Galle Road, Colombo 03</p>
-        </div>
-        <div class="contact-grid">
-          <div>
-            <span>Phone</span>
-            <strong>+94 11 234 5678</strong>
-          </div>
-          <div>
-            <span>Email</span>
-            <strong>hello@ceylontable.lk</strong>
-          </div>
-          <div>
-            <span>Hours</span>
-            <strong>Daily, 11:00 AM - 10:30 PM</strong>
-          </div>
+      <section class="section cta-section">
+        <p class="eyebrow">Ready for dinner</p>
+        <h2>Book a table or explore the full menu.</h2>
+        <div class="hero-actions">
+          <a class="button button-primary" href="reservation.html">Reserve Now</a>
+          <a class="button button-dark" href="gallery.html">View Gallery</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>Ceylon Table</span>
-      <p>Phase 1 restaurant website demo for client presentations.</p>
+      <p>Premium Sri Lankan restaurant website demo.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>

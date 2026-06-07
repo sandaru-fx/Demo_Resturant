@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Ceylon Table</title>
+    <meta name="description" content="Food, interior, and atmosphere gallery for the Ceylon Table restaurant demo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-scene" aria-hidden="true"><canvas id="spiceCanvas"></canvas></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Ceylon Table home"><span class="brand-mark">CT</span><span><strong>Ceylon Table</strong><small>Colombo Kitchen</small></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="main-nav" data-nav>
+        <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="reservation.html">Reservation</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero section">
+        <div>
+          <p class="eyebrow">Gallery</p>
+          <h1>Food, space, and atmosphere that sell the visit.</h1>
+        </div>
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85" alt="Restaurant table setting" />
+      </section>
+      <section class="section content-section">
+        <div class="gallery-grid gallery-page-grid">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85" alt="Colorful plated meal" />
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85" alt="Restaurant table setting" />
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85" alt="Fresh baked dish" />
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85" alt="Fresh salad and vegetables" />
+          <img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=900&q=85" alt="Seafood curry in a bowl" />
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85" alt="Restaurant dining room" />
+          <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=85" alt="Rice and curry served with sides" />
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=900&q=85" alt="Kottu roti with vegetables" />
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Ceylon Table</span><p>Premium Sri Lankan restaurant website demo.</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script><script src="script.js"></script>
+  </body>
+</html>

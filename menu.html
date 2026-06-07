@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Ceylon Table</title>
+    <meta name="description" content="Explore Sri Lankan rice and curry, seafood, kottu, hoppers, drinks, and desserts." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-scene" aria-hidden="true"><canvas id="spiceCanvas"></canvas></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Ceylon Table home"><span class="brand-mark">CT</span><span><strong>Ceylon Table</strong><small>Colombo Kitchen</small></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="main-nav" data-nav>
+        <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="reservation.html">Reservation</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero section">
+        <div>
+          <p class="eyebrow">Full menu</p>
+          <h1>Fresh Lankan favorites for lunch, dinner, and sharing.</h1>
+        </div>
+        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=85" alt="Rice and curry served with sides" />
+      </section>
+      <section class="section content-section">
+        <div class="menu-category">
+          <div><p class="eyebrow">Rice & Curry</p><h2>Daily plates</h2></div>
+          <div class="menu-list">
+            <article><span>Chicken Rice & Curry</span><p>Chicken curry, dhal, mallung, papadam, and pol sambol.</p><strong>LKR 1,450</strong></article>
+            <article><span>Fish Ambul Thiyal Plate</span><p>Sour fish curry, tempered potato, beans, and steamed rice.</p><strong>LKR 1,650</strong></article>
+            <article><span>Vegetable Curry Set</span><p>Five vegetable curries, red rice, and coconut sambol.</p><strong>LKR 1,250</strong></article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div><p class="eyebrow">Seafood</p><h2>Coastal specials</h2></div>
+          <div class="menu-list">
+            <article><span>Ceylon Crab Curry</span><p>Lagoon crab, roasted curry powder, coconut milk, and curry leaves.</p><strong>LKR 3,900</strong></article>
+            <article><span>Devilled Prawns</span><p>Prawns tossed with capsicum, onion, chilli, and tomato glaze.</p><strong>LKR 2,650</strong></article>
+            <article><span>Grilled Seer Fish</span><p>Lime, pepper, herb rice, and coconut relish.</p><strong>LKR 2,850</strong></article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div><p class="eyebrow">Street classics</p><h2>Kottu & hoppers</h2></div>
+          <div class="menu-list">
+            <article><span>Cheese Chicken Kottu</span><p>Gothamba roti, chicken, egg, vegetables, and melted cheese.</p><strong>LKR 1,750</strong></article>
+            <article><span>Egg Hopper Set</span><p>Three hoppers, one egg hopper, seeni sambol, and katta sambol.</p><strong>LKR 1,150</strong></article>
+            <article><span>String Hopper Kottu</span><p>String hoppers chopped with curry gravy, leeks, carrot, and egg.</p><strong>LKR 1,550</strong></article>
+          </div>
+        </div>
+        <div class="menu-category">
+          <div><p class="eyebrow">Sweet & cool</p><h2>Drinks and desserts</h2></div>
+          <div class="menu-list">
+            <article><span>Wood Apple Cream</span><p>Chilled wood apple, vanilla, and coconut cream.</p><strong>LKR 790</strong></article>
+            <article><span>Watalappan</span><p>Jaggery custard, cardamom, cashew, and palm treacle.</p><strong>LKR 850</strong></article>
+            <article><span>King Coconut Cooler</span><p>King coconut, lime, mint, and crushed ice.</p><strong>LKR 690</strong></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Ceylon Table</span><p>Premium Sri Lankan restaurant website demo.</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script><script src="script.js"></script>
+  </body>
+</html>

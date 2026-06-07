@@ -14,6 +14,15 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+document.querySelectorAll(".main-nav a").forEach((link) => {
+  const linkPage = link.getAttribute("href");
+
+  if (linkPage === currentPage) {
+    link.classList.add("is-active");
+  }
+});
+
 window.addEventListener("scroll", () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 24);
 });

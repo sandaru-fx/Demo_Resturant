@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | Ceylon Table</title>
+    <meta name="description" content="Request a table at Ceylon Table in Colombo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-scene" aria-hidden="true"><canvas id="spiceCanvas"></canvas></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Ceylon Table home"><span class="brand-mark">CT</span><span><strong>Ceylon Table</strong><small>Colombo Kitchen</small></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+      <nav class="main-nav" data-nav>
+        <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="reservation.html">Reservation</a><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero section">
+        <div>
+          <p class="eyebrow">Reservations</p>
+          <h1>Plan lunch, dinner, or a family gathering.</h1>
+        </div>
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85" alt="Restaurant dining room" />
+      </section>
+      <section class="section reservation-section reservation-page-section">
+        <div>
+          <p class="eyebrow">Request a table</p>
+          <h2>Simple booking path for mobile and desktop guests.</h2>
+          <p>For Phase 2 this is a polished front-end form. In Phase 3 we can add the demo confirmation and light interactions.</p>
+        </div>
+        <form class="reservation-form">
+          <label>Name<input type="text" placeholder="Your name" /></label>
+          <label>Phone<input type="tel" placeholder="+94 77 123 4567" /></label>
+          <label>Email<input type="email" placeholder="you@example.com" /></label>
+          <label>Date<input type="date" /></label>
+          <label>Time<select><option>12:00 PM</option><option>1:30 PM</option><option>7:00 PM</option><option>8:30 PM</option></select></label>
+          <label>Guests<select><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8+ guests</option></select></label>
+          <label class="wide-field">Special notes<input type="text" placeholder="Birthday, high chair, window table" /></label>
+          <button class="button button-primary" type="button">Request Booking</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Ceylon Table</span><p>Premium Sri Lankan restaurant website demo.</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script><script src="script.js"></script>
+  </body>
+</html>
