@@ -21,14 +21,14 @@
       </nav>
     </header>
     <main>
-      <section class="page-hero section">
+      <section class="page-hero section reveal-on-scroll">
         <div>
           <p class="eyebrow">Contact</p>
           <h1>Find us on Galle Road, Colombo 03.</h1>
         </div>
         <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85" alt="Restaurant bar and dining space" />
       </section>
-      <section class="section contact-section">
+      <section class="section contact-section reveal-on-scroll">
         <div>
           <p class="eyebrow">Visit us</p>
           <h2>Open daily for lunch and dinner.</h2>
@@ -39,16 +39,51 @@
           <div><span>Email</span><strong>hello@ceylontable.lk</strong></div>
           <div><span>Hours</span><strong>Daily, 11:00 AM - 10:30 PM</strong></div>
           <div><span>Parking</span><strong>Street parking and nearby paid parking</strong></div>
+          <div><span>Dress Code</span><strong>Smart Casual</strong></div>
+          <div><span>Payment</span><strong>Visa, Mastercard, Amex & Cash</strong></div>
         </div>
       </section>
-      <section class="section content-section">
-        <div class="map-panel">
-          <span>Map preview</span>
-          <strong>Galle Road, Colombo 03</strong>
-          <p>Located along Colombo's iconic coastal stretch, just minutes from the Galle Face promenade. Street parking available, or drop by after an evening walk.</p>
+      
+      <section class="section reservation-section reveal-on-scroll">
+        <div class="split-copy">
+          <p class="eyebrow" style="color: var(--gold);">Get in touch</p>
+          <h2>Send us a message</h2>
+          <p style="color: rgba(255,255,255,0.82);">Whether you're planning a private event, have dietary inquiries, or just want to say hello, our team is here to help.</p>
+        </div>
+        <form class="reservation-form" onsubmit="event.preventDefault(); const t = document.getElementById('contact-toast'); t.classList.add('is-visible'); setTimeout(() => t.classList.remove('is-visible'), 4000);">
+          <label>Full Name
+            <input type="text" required placeholder="John Doe">
+          </label>
+          <label>Email Address
+            <input type="email" required placeholder="john@example.com">
+          </label>
+          <label class="wide-field">Subject
+            <input type="text" required placeholder="How can we help?">
+          </label>
+          <label class="wide-field">Message
+            <textarea required placeholder="Your message here..." style="width: 100%; border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 8px; padding: 14px; color: var(--ink); background: rgba(255, 255, 255, 0.92); font: inherit; resize: vertical; min-height: 100px;"></textarea>
+          </label>
+          <button class="button button-primary wide-field" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section class="section content-section reveal-on-scroll">
+        <div class="map-panel" style="background: linear-gradient(rgba(23, 33, 29, 0.05), rgba(23, 33, 29, 0.05)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=85') center/cover; color: var(--white); text-align: center;">
+          <span style="color: var(--gold); font-weight: 800; text-transform: uppercase; margin-bottom: 8px; display: block;">Location Details</span>
+          <strong style="font-size: 2rem; font-family: 'Playfair Display', serif; display: block; margin-bottom: 16px;">Galle Road, Colombo 03</strong>
+          <p style="color: rgba(255,255,255,0.9); max-width: 500px; margin: 0 auto; line-height: 1.6;">Located along Colombo's iconic coastal stretch, just minutes from the Galle Face promenade. Street parking available, or drop by after an evening walk.</p>
+          <a href="#" class="button button-primary" style="margin-top: 24px;">Get Directions</a>
         </div>
       </section>
     </main>
+    
+    <div class="toast" id="contact-toast">
+      <div class="toast-icon">✓</div>
+      <div class="toast-body">
+        <strong>Message Sent</strong>
+        <p>Thank you! We'll get back to you shortly.</p>
+      </div>
+    </div>
     <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-brand">
